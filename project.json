@@ -1,0 +1,162 @@
+{
+	"approved" : true,
+	"description" : "使用canvas画频谱实现音乐可视化",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"base" : 
+			{
+				"order" : 10,
+				"text" : "基础高",
+				"type" : "bool",
+				"value" : true
+			},
+			"cX" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 8,
+				"text" : "中心X轴",
+				"type" : "slider",
+				"value" : 50
+			},
+			"cY" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 9,
+				"text" : "中心Y轴",
+				"type" : "slider",
+				"value" : 70
+			},
+			"color" : 
+			{
+				"order" : 5,
+				"text" : "颜色",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"colorT" : 
+			{
+				"max" : 100,
+				"min" : 10,
+				"order" : 3,
+				"text" : "颜色透明度",
+				"type" : "slider",
+				"value" : 50
+			},
+			"gackgroundStyle" : 
+			{
+				"options" : 
+				[
+					{
+						"label" : "填充 Fill",
+						"value" : 1
+					},
+					{
+						"label" : "适应 Fit",
+						"value" : 2
+					},
+					{
+						"label" : "拉伸 Stretch",
+						"value" : 3
+					},
+					{
+						"label" : "平铺 Tile",
+						"value" : 4
+					},
+					{
+						"label" : "居中 Center",
+						"value" : 5
+					}
+				],
+				"order" : 2,
+				"text" : "背景填充样式",
+				"type" : "combo",
+				"value" : 1
+			},
+			"image" : 
+			{
+				"order" : 1,
+				"text" : "自定背景图",
+				"type" : "file"
+			},
+			"lineWidth" : 
+			{
+				"max" : 10,
+				"min" : 1,
+				"order" : 11,
+				"text" : "线宽",
+				"type" : "slider",
+				"value" : 3
+			},
+			"range" : 
+			{
+				"max" : 200,
+				"min" : 80,
+				"order" : 12,
+				"text" : "幅度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"round" : 
+			{
+				"order" : 15,
+				"text" : "线条圆角",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"shadowBlur" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 7,
+				"text" : "模糊大小",
+				"type" : "slider",
+				"value" : 10
+			},
+			"shadowColor" : 
+			{
+				"order" : 6,
+				"text" : "模糊颜色",
+				"type" : "color",
+				"value" : "1 1 0"
+			},
+			"shadowColorT" : 
+			{
+				"max" : 100,
+				"min" : 10,
+				"order" : 4,
+				"text" : "模糊透明度",
+				"type" : "slider",
+				"value" : 50
+			},
+			"spacing" : 
+			{
+				"max" : 10,
+				"min" : 0,
+				"order" : 13,
+				"text" : "间距",
+				"type" : "slider",
+				"value" : 2
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Music" ],
+	"title" : "canvas_voice",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 908184092
+}
