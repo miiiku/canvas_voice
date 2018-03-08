@@ -1,26 +1,21 @@
-
-
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext('2d');
 
-
-
 var param = {
+    arr: [], // 获取到的音频数据
     x: 0.5, // 中心点x轴
     y: 0.7, // 中心点y轴
-    arr: [], // 获取到的音频数据
+    color: "rgba(255, 255, 255, 1.0)", // 颜色
+    shadowColor: "rgba(255, 255, 0, 1.0)", // 模糊颜色
+    colorT: 1, // 颜色透明度
+    shadowColorT: 1, // 模糊颜色透明度
+    shadowBlur: 48, // 模糊大小
+    lineWidth: 4, // 线宽
     range: 100, // 振幅
-    spacing: 2, // 间距
+    spacing: 1, // 间距
     base: true, // 是否有最小高度
-    colorT: 0.5, // 颜色透明度
-    shadowColorT: 0.5, // 模糊颜色透明度
-    color: "rgba(255, 255, 255, 0.5)", // 颜色
-    shadowColor: "rgba(255, 255, 0, 0.5)", // 模糊颜色
-    shadowBlur: 10, // 模糊大小
-    lineWidth: 3, // 线宽
-    round: false // 是否启用线条圆角
+    round: false, // 是否启用线条圆角
 }
-
 
 window.onresize = resize;
 resize();
@@ -35,7 +30,7 @@ window.wallpaperPropertyListener = {
 			}else{
 				document.body.style.backgroundImage = "url('bg.jpg')";
 			}
-		};
+		}
         // 背景填充样式
         if(properties.gackgroundStyle) {
             var style = "cover";
@@ -65,7 +60,7 @@ window.wallpaperPropertyListener = {
         if(properties.color){
             param.color = properties.color.value.split(' ').map(function(c){return Math.ceil(c*255)});
             ctx.strokeStyle = 'rgba('+ param.color +','+ param.colorT +')';
-        };
+        }
         // 颜色透明度
         if(properties.colorT){
             param.colorT = properties.colorT.value / 100;
@@ -122,10 +117,10 @@ window.wallpaperPropertyListener = {
 }
 
 window.wallpaperRegisterAudioListener && window.wallpaperRegisterAudioListener(wallpaperAudioListener);
+
 function wallpaperAudioListener(audioArray){
 	refresh(audioArray)
 }
-
 
 function resize() {
     canvas.width = window.innerWidth;
@@ -199,10 +194,6 @@ function draw() {
     };
     ctx.stroke();
     ctx.closePath();
-
-    /**
-    *   如果先执行了closePath,最后一个线条圆角显示
-    */
 }
 
 function refresh(audioArray) {

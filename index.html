@@ -15,9 +15,19 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        
+        p#text {
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            color: yellow;
+            font-size: 32px;
+            z-index: 999;
+        }
 	</style>
 </head>
 <body>
+    <p id="text"></p>
 	<canvas id="canvas"></canvas>
 	<script type="text/javascript" src="control.js"></script>
 </body>

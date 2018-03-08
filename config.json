@@ -1,0 +1,175 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "使用canvas画频谱实现音乐可视化！\r\n\r\n你可以修改大部分参数来实现不同显示方式：\r\n- 自定义背景图\r\n- 颜色透明度\r\n- 模糊颜色透明度\r\n- 线条颜色\r\n- 模糊颜色\r\n- 模糊大小\r\n- 频谱位于屏幕的X轴\r\n- 频谱位于屏幕的Y轴\r\n- 线条宽度\r\n- 线条振幅\r\n- 线条间距\r\n- 是否启动线条最低高度\r\n\r\n\r\n====2017.05.02 update====\r\n- 添加修改背景图显示方式\r\n\r\n====2017.05.05 update====\r\n- 添加线条圆角显示方式\r\n\r\n\r\n",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"division1" : 
+			{
+				"order" : 1,
+				"text" : "<b>背景相关设置:</b>",
+				"type" : "text"
+			},
+			"schemecolor" : 
+			{
+				"order" : 2,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"image" : 
+			{
+				"order" : 3,
+				"text" : "自定背景图",
+				"type" : "file"
+			},
+			"gackgroundStyle" : 
+			{
+				"order" : 4,
+				"text" : "背景填充样式",
+				"type" : "combo",
+				"value" : 1,
+				"options" : 
+				[
+					{
+						"label" : "填充 Fill",
+						"value" : 1
+					},
+					{
+						"label" : "适应 Fit",
+						"value" : 2
+					},
+					{
+						"label" : "拉伸 Stretch",
+						"value" : 3
+					},
+					{
+						"label" : "平铺 Tile",
+						"value" : 4
+					},
+					{
+						"label" : "居中 Center",
+						"value" : 5
+					}
+				]
+			},
+			"division2" : 
+			{
+				"order" : 5,
+				"text" : "<b>频谱相关设置:</b>",
+				"type" : "text"
+			},
+			"color" : 
+			{
+				"order" : 6,
+				"text" : "颜色",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"shadowColor" : 
+			{
+				"order" : 7,
+				"text" : "模糊颜色",
+				"type" : "color",
+				"value" : "1 1 0"
+			},
+			"colorT" : 
+			{
+				"order" : 8,
+				"max" : 100,
+				"min" : 10,
+				"text" : "颜色透明度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"shadowColorT" : 
+			{
+				"order" : 9,
+				"max" : 100,
+				"min" : 10,
+				"text" : "模糊透明度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"shadowBlur" : 
+			{
+				"order" : 10,
+				"max" : 100,
+				"min" : 0,
+				"text" : "模糊大小",
+				"type" : "slider",
+				"value" : 48
+			},
+			"cX" : 
+			{
+				"order" : 11,
+				"max" : 100,
+				"min" : 0,
+				"text" : "中心X轴",
+				"type" : "slider",
+				"value" : 50
+			},
+			"cY" : 
+			{
+				"order" : 12,
+				"max" : 100,
+				"min" : 0,
+				"text" : "中心Y轴",
+				"type" : "slider",
+				"value" : 70
+			},
+			"lineWidth" : 
+			{
+				"order" : 13,
+				"max" : 10,
+				"min" : 1,
+				"text" : "线宽",
+				"type" : "slider",
+				"value" : 4
+			},
+			"range" : 
+			{
+				"order" : 14,
+				"max" : 200,
+				"min" : 80,
+				"text" : "幅度",
+				"type" : "slider",
+				"value" : 100
+			},
+			"spacing" : 
+			{
+				"order" : 15,
+				"max" : 10,
+				"min" : 0,
+				"text" : "间距",
+				"type" : "slider",
+				"value" : 1
+			},
+			"base" : 
+			{
+				"order" : 16,
+				"text" : "基础高",
+				"type" : "bool",
+				"value" : true
+			},
+			"round" : 
+			{
+				"order" : 17,
+				"text" : "线条圆角",
+				"type" : "bool",
+				"value" : true
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Music" ],
+	"title" : "canvas_voice",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 908184092
+}

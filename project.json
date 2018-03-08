@@ -1,6 +1,7 @@
 {
 	"approved" : true,
-	"description" : "使用canvas画频谱实现音乐可视化",
+	"contentrating" : "Everyone",
+	"description" : "使用canvas画频谱实现音乐可视化！\n\n你可以修改大部分参数来实现不同显示方式：\n- 自定义背景图\n- 颜色透明度\n- 模糊颜色透明度\n- 线条颜色\n- 模糊颜色\n- 模糊大小\n- 频谱位于屏幕的X轴\n- 频谱位于屏幕的Y轴\n- 线条宽度\n- 线条振幅\n- 线条间距\n- 是否启动线条最低高度\n\n\n====2017.05.02 update====\n- 添加修改背景图显示方式\n\n====2017.05.05 update====\n- 添加线条圆角显示方式\n\n====2018.03.05 update====\n- 修改了一下默认显示参数",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -8,7 +9,7 @@
 		{
 			"base" : 
 			{
-				"order" : 10,
+				"order" : 16,
 				"text" : "基础高",
 				"type" : "bool",
 				"value" : true
@@ -17,7 +18,7 @@
 			{
 				"max" : 100,
 				"min" : 0,
-				"order" : 8,
+				"order" : 11,
 				"text" : "中心X轴",
 				"type" : "slider",
 				"value" : 50
@@ -26,14 +27,14 @@
 			{
 				"max" : 100,
 				"min" : 0,
-				"order" : 9,
+				"order" : 12,
 				"text" : "中心Y轴",
 				"type" : "slider",
 				"value" : 70
 			},
 			"color" : 
 			{
-				"order" : 5,
+				"order" : 6,
 				"text" : "颜色",
 				"type" : "color",
 				"value" : "1 1 1"
@@ -42,10 +43,22 @@
 			{
 				"max" : 100,
 				"min" : 10,
-				"order" : 3,
+				"order" : 8,
 				"text" : "颜色透明度",
 				"type" : "slider",
-				"value" : 50
+				"value" : 100
+			},
+			"division1" : 
+			{
+				"order" : 1,
+				"text" : "<b>背景相关设置:</b>",
+				"type" : "text"
+			},
+			"division2" : 
+			{
+				"order" : 5,
+				"text" : "<b>频谱相关设置:</b>",
+				"type" : "text"
 			},
 			"gackgroundStyle" : 
 			{
@@ -72,14 +85,14 @@
 						"value" : 5
 					}
 				],
-				"order" : 2,
+				"order" : 4,
 				"text" : "背景填充样式",
 				"type" : "combo",
 				"value" : 1
 			},
 			"image" : 
 			{
-				"order" : 1,
+				"order" : 3,
 				"text" : "自定背景图",
 				"type" : "file"
 			},
@@ -87,30 +100,30 @@
 			{
 				"max" : 10,
 				"min" : 1,
-				"order" : 11,
+				"order" : 13,
 				"text" : "线宽",
 				"type" : "slider",
-				"value" : 3
+				"value" : 4
 			},
 			"range" : 
 			{
 				"max" : 200,
 				"min" : 80,
-				"order" : 12,
+				"order" : 14,
 				"text" : "幅度",
 				"type" : "slider",
 				"value" : 100
 			},
 			"round" : 
 			{
-				"order" : 15,
+				"order" : 17,
 				"text" : "线条圆角",
 				"type" : "bool",
-				"value" : false
+				"value" : true
 			},
 			"schemecolor" : 
 			{
-				"order" : 0,
+				"order" : 2,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0 0 0"
@@ -119,14 +132,14 @@
 			{
 				"max" : 100,
 				"min" : 0,
-				"order" : 7,
+				"order" : 10,
 				"text" : "模糊大小",
 				"type" : "slider",
-				"value" : 10
+				"value" : 48
 			},
 			"shadowColor" : 
 			{
-				"order" : 6,
+				"order" : 7,
 				"text" : "模糊颜色",
 				"type" : "color",
 				"value" : "1 1 0"
@@ -135,19 +148,19 @@
 			{
 				"max" : 100,
 				"min" : 10,
-				"order" : 4,
+				"order" : 9,
 				"text" : "模糊透明度",
 				"type" : "slider",
-				"value" : 50
+				"value" : 100
 			},
 			"spacing" : 
 			{
 				"max" : 10,
 				"min" : 0,
-				"order" : 13,
+				"order" : 15,
 				"text" : "间距",
 				"type" : "slider",
-				"value" : 2
+				"value" : 1
 			}
 		},
 		"supportsaudioprocessing" : true
