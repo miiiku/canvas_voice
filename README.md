@@ -8,4 +8,4 @@
 #### 项目地址：[canvas_voice](https://steamcommunity.com/sharedfiles/filedetails/?id=908184092)
 
 #### 游览：
-![canvas_voice.png](http://oi3r90aa5.bkt.clouddn.com/canvas_voice.png)
+![canvas_voice.png](./preview.jpg)
